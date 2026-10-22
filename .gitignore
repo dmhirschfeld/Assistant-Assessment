@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Code graph — a build artifact, rebuilt by `gsd-t graph index`. Never versioned.
+.gsd-t/graphDB/
+
+# GSD-T runtime state
+.gsd-t/.context-meter-state.json
+.gsd-t/context-meter.log
+.gsd-t/events/
+.gsd-t/heartbeat-*.jsonl
+.gsd-t/metrics/
+.gsd-t/transcripts/
+.gsd-t/.unattended/
