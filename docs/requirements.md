@@ -53,7 +53,7 @@
 | REQ-004 | Resume after an accidental refresh without restarting the current section's timer. | P1 | not started | — |
 | REQ-005 | Support item types: drag-to-rank, single choice, best response, calendar placement, flag lines in a table, numeric entry with tolerance, click-to-mark proofreading, timed typing with adjusted WPM. | P1 | not started | — |
 | REQ-006 | Built-in calculator in the Math section. | P1 | not started | — |
-| REQ-007 | Candidate report: scores and explanations, **without** red flags, ratings or timing. Showing correct answers is a per-employer setting (showing them can leak the answer key). | P1 | not started | — |
+| REQ-007 | Candidate report: scores and explanations, **without** red flags, ratings, timing or correct answers. Library tests never reveal correct answers, since that would leak the shared key (Q9). | P1 | not started | — |
 | REQ-008 | Privacy and consent notice before starting; keyboard required for typing. | P1 | not started | — |
 | REQ-009 | Accommodations such as extra time. | P2 | not started | — |
 | **Employer: invitations** |||||

@@ -9,7 +9,7 @@ An hour-long, job-realistic pre-hire test for executive and administrative assis
 
 - **The prototype is the spec.** `Assistant Assessment Platform_ Clickable Prototype.html` holds the screens, the full assessment content (items, answer keys, explanations, red flags) and the **Developer notes** panel listing what must be built. `docs/requirements.md` is extracted from it — when they disagree, ask.
 - **Answer keys and scoring never reach the browser.** Scoring and section timers run on the server (the prototype does both in the browser; that must not carry over).
-- **The candidate never sees red flags, ratings or timing.** Their report has scores and explanations only; showing correct answers is a per-employer setting.
+- **The candidate never sees red flags, ratings or timing.** Their report has scores and explanations only; library tests never reveal correct answers (Q9).
 - **Assessments are versioned.** A report must always render against the exact questions that candidate saw — never edit a published version in place.
 - **This is a multi-tenant SaaS product from day one.** GSD Queen is the first tenant, not a separate internal tool. Each employer sees only its own candidates; tenant isolation is P1.
 
