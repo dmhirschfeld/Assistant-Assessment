@@ -11,7 +11,7 @@ An hour-long, job-realistic pre-hire test for executive and administrative assis
 - **Answer keys and scoring never reach the browser.** Scoring and section timers run on the server (the prototype does both in the browser; that must not carry over).
 - **The candidate never sees red flags, ratings or timing.** Their report has scores and explanations only; showing correct answers is a per-employer setting.
 - **Assessments are versioned.** A report must always render against the exact questions that candidate saw — never edit a published version in place.
-- **Each employer sees only its own candidates** (from Phase 2; design for it from the start).
+- **This is a multi-tenant SaaS product from day one.** GSD Queen is the first tenant, not a separate internal tool. Each employer sees only its own candidates; tenant isolation is P1.
 
 ## Where the repo misleads you
 
@@ -46,3 +46,20 @@ Not chosen yet. Decide with `/gsd-t-architect` (see Open Questions in `docs/requ
 
   Regenerate with /gsd-t-init-scan-setup.
 -->
+
+
+# Destructive Action Guard (MANDATORY)
+
+**NEVER perform destructive or structural changes without explicit user approval.** This applies at ALL autonomy levels.
+
+Before any of these actions, STOP and ask the user:
+- DROP TABLE, DROP COLUMN, DROP INDEX, TRUNCATE, DELETE without WHERE
+- Renaming or removing database tables or columns
+- Schema migrations that lose data or break existing queries
+- Replacing an existing architecture pattern (e.g., normalized → denormalized)
+- Removing or replacing existing files/modules that contain working functionality
+- Changing ORM models in ways that conflict with the existing database schema
+- Removing API endpoints or changing response shapes that existing clients depend on
+- Any change that would require other parts of the system to be rewritten
+
+**Rule: "Adapt new code to existing structures, not the other way around."**

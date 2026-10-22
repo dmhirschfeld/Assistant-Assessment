@@ -36,6 +36,7 @@ None — ready for next milestone
 ## Decision Log
 - 2026-10-22: Project initialized with GSD-T workflow
 - 2026-10-22 14:41 PDT: Scan skipped (greenfield, no code). docs/requirements.md, CLAUDE.md and README.md written from the clickable prototype and its Developer notes. Stack left undecided pending /gsd-t-architect.
+- 2026-10-22 15:48 PDT: Purpose confirmed as multi-tenant SaaS. Added SaaS Platform Requirements (SAAS-001..081, each with why it matters), NFR-007..012, open questions Q5–Q9; tenant isolation, roles and per-employer settings moved to P1; Q1 resolved (full app from P1).
 
 ## Session Log
 | Date | Session | What was accomplished |
