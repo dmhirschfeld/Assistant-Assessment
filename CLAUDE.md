@@ -16,11 +16,11 @@ An hour-long, job-realistic pre-hire test for executive and administrative assis
 ## Where the repo misleads you
 
 - The prototype HTML is **not the app's codebase** — it's a single front-end-only file with sample data. Don't extend it or build on its code; extract content and behavior from it.
-- `tsconfig.json` (`{}`) is a placeholder written by the code-graph indexer. It does not mean the stack is TypeScript — the stack is undecided.
+- `tsconfig.json` (`{}`) is a placeholder written by the code-graph indexer, not a real TypeScript config — replace it when the first package is scaffolded.
 
 ## Stack and commands
 
-Not chosen yet. Decide with `/gsd-t-architect` (see Open Questions in `docs/requirements.md`: lean Phase 1 vs. full app). Fill this section in once decided.
+Planned (not built yet): TypeScript throughout — React + Vite web app (`web-app/`), Fastify API (`server/`), shared constants (`shared/`), Postgres on Neon with row-level security, hosted on Vercel, email via Resend, Vitest + Playwright. Design: `.gsd-t/pseudocode/PseudoCode-Foundation.md`.
 
 | | |
 |---|---|
@@ -33,6 +33,7 @@ Not chosen yet. Decide with `/gsd-t-architect` (see Open Questions in `docs/requ
 | | |
 |---|---|
 | Requirements (from the prototype) | `docs/requirements.md` |
+| Foundation design | `.gsd-t/pseudocode/PseudoCode-Foundation.md` |
 | State and decisions | `.gsd-t/progress.md` |
 | Interfaces between parts | `.gsd-t/contracts/` |
 | How to reach environments | `docs/infrastructure.md` |

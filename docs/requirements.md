@@ -172,10 +172,12 @@ Gaps found against the SaaS purpose (2026-10-22). **Design-now** items shape the
 | Q3 | Invite link expiry length (prototype suggests 7 days)? | REQ-012 |
 | Q4 | Product name — "GSD Queen Assessments" is a working name. | Branding |
 | Q5 | Pricing model (SAAS-001). | Billing, metering |
-| Q6 | Can employers author their own items, or only configure library assessments (SAAS-002)? | Content model |
-| Q7 | Candidate record per employer or shared (SAAS-003)? | Data model, privacy |
-| Q8 | Do agency clients log in, or only receive shared report links (SAAS-005)? | Roles, tenancy |
-| Q9 | "Show correct answers" (REQ-007) vs. a shared library's secret key: may one employer reveal answers to a test other employers use? | REQ-007, SAAS-002 |
+| Q6 | ~~Employer authoring?~~ — resolved: platform library + per-company settings; only platform staff author. | — |
+| Q7 | ~~Candidate record scope?~~ — resolved: one record per company, never linked across companies. | — |
+| Q8 | ~~Agency client access?~~ — resolved: both — read-only share links in P1, client-viewer logins in P2. | — |
+| Q9 | ~~Reveal correct answers?~~ — resolved: library tests never reveal correct answers to candidates. | — |
+| Q10 | Is the prototype's typing hire-rate table real GSD Queen data, and can current test results (Criteria) be imported? | SAAS-081, cutoffs |
+| Q11 | Per-company spending limit needs items rewritten with a placeholder limit and computed keys — when? | REQ-043 |
 
 ## Test Coverage
 
